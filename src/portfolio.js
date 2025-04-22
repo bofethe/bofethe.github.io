@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/mapAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Bo Fethe",
-  title: "Hi all, I'm Bo Fethe",
+  title: "Bo Fethe",
   subTitle: emoji(
-    "A passionate Data Scientist solving geospatial analytical problems with experience with the ESRI platform, python, R, SQL, and JavaScript."
+    "A passionate Data Scientist solving geospatial analytical problems with experience with the ESRI platform, statistical programming, and ecological sciences."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1x8HzVXhJWRDvVgFq9jZiJPmW-qnEtLHGziyvN2Wf7zI/edit?usp=sharing", // Set to empty to hide the button
@@ -36,10 +36,6 @@ const socialMediaLinks = {
   github: "https://github.com/bofethe",
   linkedin: "https://www.linkedin.com/in/bofethe/",
   gmail: "bofethe@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -54,9 +50,11 @@ const skillsSection = {
     emoji(
       "⚡ Use Machine Learning to uncover hidden trends"
     ),
-    emoji("⚡ Process geospatial data"),
     emoji(
-      "⚡ Create Business Intelligence tools to visualize and share results"
+      "⚡ Process geospatial data and develop Business Intelligence tools"
+    ),
+    emoji(
+      "⚡ Use Azure, AWS, GCP, and Databricks to process big data on the cloud"
     )
   ],
 
@@ -84,22 +82,17 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
-
     {
       skillName: "git",
       fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "markdown",
-      fontAwesomeClassname: "fab fa-markdown"
+      skillName: "react",
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "docker",
@@ -118,8 +111,8 @@ const educationInfo = {
       schoolName: "Georgia Institute of Technology",
       logo: require("./assets/images/gt_logo.png"),
       subHeader: "Master of Science in Analytics",
-      duration: "December 2025 (estimated)",
-      desc: "Top 5 nationally ranked program in data sciene and analytics",
+      duration: "August 2025 (estimated)",
+      desc: "Top 5 nationally ranked program in data science and analytics",
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
@@ -127,7 +120,7 @@ const educationInfo = {
       logo: require("./assets/images/uncw_logo.png"),
       subHeader: "Bachelor of Science in Environmental Science, Minor Biology",
       duration: "May 2013",
-      desc: "Division 1 Student Athlete - Swimming",
+      desc: "NCAA Division 1 Student Athlete - Swimming",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -146,7 +139,7 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Python",
+      Stack: "Statistical Programming",
       progressPercentage: "80%"
     },
     {
@@ -200,7 +193,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -299,14 +292,14 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://github.com/bofethe/pandas-tutorial/blob/master/pandasTutorial.ipynb",
+      url: "https://github.com/bofethe/python-training/blob/master/Pandas/pandasTutorial.ipynb",
       title: "Pandas",
       description:
         `Pandas provides efficient data structures through DataFrames and Series, which are designed to make working with 
         structured data (like tables) intuitive and efficient.`
     },
     {
-      url: "https://github.com/bofethe/sqlite3/blob/main/sqlite3.ipynb",
+      url: "https://github.com/bofethe/python-training/blob/master/sqlite3/sqlite3.ipynb",
       title: "SQLite3",
       description:
         `SQLite is particularly popular in environments where a full-scale 
@@ -318,6 +311,13 @@ const blogSection = {
       description:
         `The arcpy library can be used to run geoprocessing tools as you would in their desktop environment, while the arcgis library
         can connect to ArcGIS Online or ArcGIS Enterprise for cloud-based tasks.`
+    },
+    {
+      url: "https://github.com/bofethe/python-training/tree/master/Logging",
+      title: "Logging",
+      description:
+        `Logs are critical for production apps and can capture detailed info about what is happening at different stages of your app 
+        and can be stored in files and displayed on the console.`
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -367,7 +367,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Reach out to discuss a project or freelance work",
   number: "865-599-0990",
   email_address: "bofethe@gmail.com"
 };
@@ -379,7 +379,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
