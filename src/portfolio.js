@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Data Scientist solving geospatial analytical problems with experience with the ESRI platform, statistical programming, and ecological sciences."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1x8HzVXhJWRDvVgFq9jZiJPmW-qnEtLHGziyvN2Wf7zI/edit?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1x8HzVXhJWRDvVgFq9jZiJPmW-qnEtLHGziyvN2Wf7zI/export?format=pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -47,12 +47,8 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Descriptive, Predictive, and Prescriptive Analytics",
   skills: [
-    emoji(
-      "⚡ Use Machine Learning to uncover hidden trends"
-    ),
-    emoji(
-      "⚡ Process geospatial data and develop Business Intelligence tools"
-    ),
+    emoji("⚡ Use Machine Learning to uncover hidden trends"),
+    emoji("⚡ Process geospatial data and develop Business Intelligence tools"),
     emoji(
       "⚡ Use Azure, AWS, GCP, and Databricks to process big data on the cloud"
     )
@@ -112,7 +108,7 @@ const educationInfo = {
       logo: require("./assets/images/gt_logo.png"),
       subHeader: "Master of Science in Analytics",
       duration: "August 2025 (estimated)",
-      desc: "Top 5 nationally ranked program in data science and analytics",
+      desc: "Top 5 nationally ranked program in data science and analytics"
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
@@ -120,7 +116,7 @@ const educationInfo = {
       logo: require("./assets/images/uncw_logo.png"),
       subHeader: "Bachelor of Science in Environmental Science, Minor Biology",
       duration: "May 2013",
-      desc: "NCAA Division 1 Student Athlete - Swimming",
+      desc: "NCAA Division 1 Student Athlete - Swimming"
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -205,7 +201,8 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/ebthumbnail.png"),
-      projectName: "Predictive Analysis of Crash Incidents in Hillsborough County",
+      projectName:
+        "Predictive Analysis of Crash Incidents in Hillsborough County",
       projectDesc: `This repository analyzes crash data in Hillsborough County, Florida and uses various machine 
       learning models to predict the probablity of an incapacitating event occuring. The training data was obtained from 
       Signal Four Analytics and filtered to all crash events in Hillsborough County in 2023.`,
@@ -215,8 +212,8 @@ const bigProjects = {
           url: "https://github.com/bofethe/signal-four/blob/main/PredictiveCrashAnalysis-report.pdf"
         },
         {
-          name: 'Dashboard',
-          url: 'https://experience.arcgis.com/experience/131319e3bac346e8a3054e43ba6ee53b'
+          name: "Dashboard",
+          url: "https://experience.arcgis.com/experience/131319e3bac346e8a3054e43ba6ee53b"
         }
         //  you can add extra buttons here.
       ]
@@ -224,7 +221,8 @@ const bigProjects = {
     {
       image: require("./assets/images/yahtzee.jpeg"),
       projectName: "Yahtzee Simulation",
-      projectDesc: "This simulates the game of Yahtzee and tests various strategies by running Monte Carlo simulations.",
+      projectDesc:
+        "This simulates the game of Yahtzee and tests various strategies by running Monte Carlo simulations.",
       footerLink: [
         {
           name: "Report",
@@ -294,29 +292,25 @@ const blogSection = {
     {
       url: "https://github.com/bofethe/python-training/blob/master/Pandas/pandasTutorial.ipynb",
       title: "Pandas",
-      description:
-        `Pandas provides efficient data structures through DataFrames and Series, which are designed to make working with 
+      description: `Pandas provides efficient data structures through DataFrames and Series, which are designed to make working with 
         structured data (like tables) intuitive and efficient.`
     },
     {
       url: "https://github.com/bofethe/python-training/blob/master/sqlite3/sqlite3.ipynb",
       title: "SQLite3",
-      description:
-        `SQLite is particularly popular in environments where a full-scale 
+      description: `SQLite is particularly popular in environments where a full-scale 
         database might be unnecessary, such as small to medium-sized applications or local storage in web browsers.`
     },
     {
       url: "https://github.com/bofethe/python-training/blob/master/GIS-intro/Demo.ipynb",
       title: "Python in GIS",
-      description:
-        `The arcpy library can be used to run geoprocessing tools as you would in their desktop environment, while the arcgis library
+      description: `The arcpy library can be used to run geoprocessing tools as you would in their desktop environment, while the arcgis library
         can connect to ArcGIS Online or ArcGIS Enterprise for cloud-based tasks.`
     },
     {
       url: "https://github.com/bofethe/python-training/tree/master/Logging",
       title: "Logging",
-      description:
-        `Logs are critical for production apps and can capture detailed info about what is happening at different stages of your app 
+      description: `Logs are critical for production apps and can capture detailed info about what is happening at different stages of your app 
         and can be stored in files and displayed on the console.`
     }
   ],
@@ -349,9 +343,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    ""
-  ],
+  podcast: [""],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -366,8 +358,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Reach out to discuss a project or freelance work",
+  subtitle: "Reach out to discuss a project or freelance work",
   number: "865-599-0990",
   email_address: "bofethe@gmail.com"
 };
