@@ -23,7 +23,8 @@ const greeting = {
   username: "Bo Fethe",
   title: "Bo Fethe",
   subTitle: emoji(
-    "A passionate Data Scientist solving geospatial analytical problems with experience with the ESRI platform, statistical programming, and ecological sciences."
+    `A Solutions Engineer solving geospatial analytical problems with 
+    experience with the ESRI platform, statistical programming, and ecological sciences.`
   ),
   resumeLink:
     "https://docs.google.com/document/d/1x8HzVXhJWRDvVgFq9jZiJPmW-qnEtLHGziyvN2Wf7zI/export?format=pdf", // Set to empty to hide the button
@@ -106,16 +107,16 @@ const educationInfo = {
     {
       schoolName: "Georgia Institute of Technology",
       logo: require("./assets/images/gt_logo.png"),
-      subHeader: "Master of Science in Analytics",
-      duration: "August 2025 (estimated)",
+      subHeader: "Analytics, (M.S.)",
+      // duration: "August 2025",
       desc: "Top 5 nationally ranked program in data science and analytics"
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
       schoolName: "University of North Carolina Wilmington",
       logo: require("./assets/images/uncw_logo.png"),
-      subHeader: "Bachelor of Science in Environmental Science, Minor Biology",
-      duration: "May 2013",
+      subHeader: "Environmental Science, Minor Biology, (B.S.)",
+      // duration: "May 2013",
       desc: "NCAA Division 1 Student Athlete - Swimming"
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -201,11 +202,9 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/ebthumbnail.png"),
-      projectName:
-        "Predictive Analysis of Crash Incidents in Hillsborough County",
+      projectName: "Predictive Analysis of Crash Incidents",
       projectDesc: `This repository analyzes crash data in Hillsborough County, Florida and uses various machine 
-      learning models to predict the probablity of an incapacitating event occuring. The training data was obtained from 
-      Signal Four Analytics and filtered to all crash events in Hillsborough County in 2023.`,
+      learning models to predict the probablity of an incapacitating event occuring.`,
       footerLink: [
         {
           name: "Report",
@@ -229,6 +228,18 @@ const bigProjects = {
           url: "https://github.com/bofethe/yahtzee/blob/master/ISYE6644_FinalProject_FetheBo.pdf"
         }
       ]
+    },
+    {
+      image: require("./assets/images/bird-game.png"),
+      projectName: "Tampa Bay Bird ID Game",
+      projectDesc:
+        "This is a game to help users identify different bird species found in Tampa Bay.",
+      footerLink: [
+        {
+          name: "Game",
+          url: "https://bofethe.github.io/bird-game"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -238,47 +249,37 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Affiliations"),
+  subtitle: "Organizations and events I have contributed to",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "The Spatial Community",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Website editor and Slack administrator for the Spatial Community",
+      image: require("./assets/images/spatial-community-logo.png"),
+      imageAlt: "The Spatial Community Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Website",
+          url: "https://thespatialcommunity.org"
         }
       ]
     },
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Tampa Bay GIS User Group",
+      subtitle: "Systems Administrator for the Tampa Bay GIS User Group",
+      image: require("./assets/images/tbgis-logo.png"),
+      imageAlt: "TBGIS Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Website",
+          url: "https://www.tampabaygeo.org"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -287,7 +288,7 @@ const blogSection = {
   title: "Tutorials",
   subtitle:
     "I love to share my knowledge by creating tutorial Jupyter Notebooks",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://github.com/bofethe/python-training/blob/master/Pandas/pandasTutorial.ipynb",
@@ -304,14 +305,13 @@ const blogSection = {
     {
       url: "https://github.com/bofethe/python-training/blob/master/GIS-intro/Demo.ipynb",
       title: "Python in GIS",
-      description: `The arcpy library can be used to run geoprocessing tools as you would in their desktop environment, while the arcgis library
-        can connect to ArcGIS Online or ArcGIS Enterprise for cloud-based tasks.`
+      description: `Scripting languages like Python are widely used in GIS for automating tasks, performing 
+      spatial analysis, and creating custom tools.`
     },
     {
       url: "https://github.com/bofethe/python-training/tree/master/Logging",
       title: "Logging",
-      description: `Logs are critical for production apps and can capture detailed info about what is happening at different stages of your app 
-        and can be stored in files and displayed on the console.`
+      description: `Logs are critical for production apps and can capture detailed info about what is happening at different stages of your application.`
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -360,7 +360,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Reach out to discuss a project or freelance work",
   number: "865-599-0990",
-  email_address: "bofethe@gmail.com"
+  email_address: "bofethe@gmail.com",
+  pgp_key_link:  "/bofethe-public-key.asc"
 };
 
 // Twitter Section

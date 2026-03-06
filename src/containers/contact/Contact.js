@@ -41,6 +41,7 @@ export default function Contact() {
                   <br />
                 </>
               )}
+              
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
@@ -49,6 +50,21 @@ export default function Contact() {
               </a>
               <br />
               <br />
+
+              {contactInfo.pgp_key_link && (
+                <>
+                  <a
+                    className="contact-detail" 
+                    href={contactInfo.pgp_key_link}
+                    download="public-key.asc"
+                  >
+                    PGP Public Key
+                  </a>
+                  <br />
+                  <br />
+                </>
+              )}
+
               <SocialMedia />
             </div>
           </div>

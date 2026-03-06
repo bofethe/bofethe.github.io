@@ -58,7 +58,7 @@ function Header() {
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Affiliations</a>
             </li>
           )}
           {viewBlog && (
@@ -81,9 +81,9 @@ function Header() {
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
+            <span>
               <ToggleSwitch />
-            </a>
+            </span>
           </li>
         </ul>
       </header>
